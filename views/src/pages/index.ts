@@ -1,0 +1,18 @@
+export * from './Home'
+export * from './Login'
+export * from './SignUp'
+export * from './User'
+export * from './PrintZero'
+export * from './PrintOne'
+export * from './PrintTwo'
+export * from './PrintThree'
+export * from './About'
+
+export * from './HistoryPrint'
+export * from './HistoryBuy'
+
+export * from './Admin'
+export * from './AdminConfig'
+export * from './AdminPrinter'
+export * from './AdminViewFeedback'
+export * from './LoginRoute'

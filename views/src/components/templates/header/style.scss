@@ -1,0 +1,37 @@
+$headerColor: rgb(0, 129, 254, 0.12);
+
+.container {
+    max-width: 1400px!important;
+    width: 80%!important;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $headerColor;
+    height: 100px;
+    a {
+        position: relative;
+        &::after { 
+            position: absolute;
+            content: "";
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: black;
+            transition: 0.3s;
+        }
+        &:hover {
+            cursor: pointer;
+            &::after {
+                width: 100%;
+            }
+        }
+        &.active {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
